@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
+import { Phone, Linkedin, Mail, ArrowDown } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -45,15 +45,13 @@ const Hero = () => {
               LinkedIn
             </a>
 
-            {/* <a
-              href="https://github.com/AshithaKulal"
-              target="_blank"
-              rel="noopener noreferrer"
+            <a
+              href="tel:+91-9632814279"
               className="group flex items-center gap-2 px-6 py-3 bg-gray-800/50 backdrop-blur-sm text-white rounded-lg font-semibold border border-gray-700 hover:border-emerald-500 transition-all duration-300 hover:scale-105"
             >
-              <Github className="w-5 h-5" />
-              GitHub
-            </a> */}
+              <Phone className="w-5 h-5" />
+              Mobile
+            </a>
           </div>
 
           {/* <div className="animate-bounce">
