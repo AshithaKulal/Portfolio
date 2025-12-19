@@ -20,7 +20,7 @@ const Hero = () => {
             <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-cyan-400 via-emerald-400 to-cyan-400 bg-clip-text text-transparent animate-gradient">
               Ashitha Kulal
             </h1>
-            
+
             <p className="text-lg text-gray-400 mb-8">
               3.5 Years of Excellence in Building Scalable Web Applications
             </p>
@@ -45,7 +45,7 @@ const Hero = () => {
               LinkedIn
             </a>
 
-            <a
+            {/* <a
               href="https://github.com/AshithaKulal"
               target="_blank"
               rel="noopener noreferrer"
@@ -53,12 +53,12 @@ const Hero = () => {
             >
               <Github className="w-5 h-5" />
               GitHub
-            </a>
+            </a> */}
           </div>
 
-          <div className="animate-bounce">
+          {/* <div className="animate-bounce">
             <ArrowDown className="w-8 h-8 text-cyan-400 mx-auto" />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

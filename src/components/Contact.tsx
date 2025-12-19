@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, Send } from 'lucide-react';
+import { Mail, Linkedin, Phone, Send } from 'lucide-react';
 
 const Contact = () => {
   const contactLinks = [
@@ -17,10 +17,10 @@ const Contact = () => {
       color: 'from-cyan-500 to-blue-500',
     },
     {
-      icon: Github,
-      label: 'GitHub',
-      value: 'github.com/AshithaKulal',
-      href: 'https://github.com/AshithaKulal',
+      icon: Phone,
+      label: 'Mobile',
+      value: '+91-9632814279',
+      href: 'tel:+91-9632814279',
       color: 'from-emerald-500 to-green-500',
     },
   ];
@@ -44,24 +44,26 @@ const Contact = () => {
           </div>
 
           <div className="bg-gray-800/40 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-gray-700 hover:border-cyan-500/50 transition-all duration-300">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              {contactLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  target={link.label !== 'Email' ? '_blank' : undefined}
-                  rel={link.label !== 'Email' ? 'noopener noreferrer' : undefined}
-                  className="group bg-gray-900/50 rounded-xl p-6 border border-gray-700 hover:border-cyan-500 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20"
-                >
-                  <div
-                    className={`w-12 h-12 bg-gradient-to-br ${link.color} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
+            <div className="flex justify-center mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 justify-center">
+                {contactLinks.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.href}
+                    target={link.label !== 'Email' ? '_blank' : undefined}
+                    rel={link.label !== 'Email' ? 'noopener noreferrer' : undefined}
+                    className="group bg-gray-900/50 rounded-xl p-6 border border-gray-700 hover:border-cyan-500 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20"
                   >
-                    <link.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">{link.label}</h3>
-                  <p className="text-sm text-gray-400 break-all">{link.value}</p>
-                </a>
-              ))}
+                    <div
+                      className={`w-12 h-12 bg-gradient-to-br ${link.color} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
+                    >
+                      <link.icon className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-white mb-2">{link.label}</h3>
+                    <p className="text-sm text-gray-400 break-all">{link.value}</p>
+                  </a>
+                ))}
+              </div>
             </div>
 
             <div className="text-center pt-8 border-t border-gray-700">
