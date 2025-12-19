@@ -20,13 +20,7 @@ const Hero = () => {
             <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-cyan-400 via-emerald-400 to-cyan-400 bg-clip-text text-transparent animate-gradient">
               Ashitha Kulal
             </h1>
-
-            <p className="text-2xl md:text-3xl text-gray-300 mb-6">
-              Crafting Enterprise Solutions with{' '}
-              <span className="text-emerald-400 font-semibold">Precision</span> &{' '}
-              <span className="text-cyan-400 font-semibold">Innovation</span>
-            </p>
-
+            
             <p className="text-lg text-gray-400 mb-8">
               3.5 Years of Excellence in Building Scalable Web Applications
             </p>
